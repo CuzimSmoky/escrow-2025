@@ -1,9 +1,3 @@
-Of course — here’s your **clean, complete English `README.md`**, written in a professional GitHub style.
-It clearly states that this repository is **your personal attempt to learn, recreate, and use** the Anchor Escrow 2025 project.
-
----
-
-````markdown
 # 🪙 Anchor Escrow 2025 — Personal Implementation
 
 ## 🧠 About This Repository
@@ -120,5 +114,6 @@ This version was recreated and customized for **learning and experimentation**.
 
 **CuzimSmoky**
 Learning Rust, Solana, and Anchor — one block at a time 🦀⚓
+
 
 ```
