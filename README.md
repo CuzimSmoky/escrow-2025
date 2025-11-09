@@ -1,100 +1,124 @@
-# Anchor Escrow 2025
+Of course — here’s your **clean, complete English `README.md`**, written in a professional GitHub style.
+It clearly states that this repository is **your personal attempt to learn, recreate, and use** the Anchor Escrow 2025 project.
 
-## 🆕 Updated for Anchor 0.32.1, Solana Kit, Kite, and Codama
+---
 
-## 🆕 Now includes Rust/LiteSVM tests - check out `programs/escrow/src/tests.rs`
+````markdown
+# 🪙 Anchor Escrow 2025 — Personal Implementation
 
-[![CI Badge](https://github.com/mikemaccana/anchor-escrow-2025/actions/workflows/tests.yaml/badge.svg)](https://github.com/mikemaccana/anchor-escrow-2025/actions)
+## 🧠 About This Repository
 
-**Start here for your first real Solana program / smart contract** (Solana generally uses the word 'program', older blockchains use 'smart contract'). As the saying goes, "All Solana programs are variations of an escrow."
+This repository is **my personal attempt** to recreate, understand, and use the  
+[Anchor Escrow 2025](https://github.com/mikemaccana/anchor-escrow-2025) project from scratch.
 
-This makes **Anchor Escrow 2025** the perfect starting point for anyone diving into Solana program development with a practical, real-world application.
+The goal is to **learn how to build, test, and deploy** a complete Solana program (smart contract)  
+using modern tools like Anchor, Rust, and Solana Kit — by doing it myself, step by step.
 
-**Anchor Escrow 2025** provides:
+> ⚠️ This repository is **not the official version**.  
+> It’s my own educational implementation based on the open-source project by [mikemaccana](https://github.com/mikemaccana).
 
-- Full compatibility with the latest Rust, Agave CLI, Node.js, Anchor, and Solana Kit.
-- Clean builds with zero warnings or errors.
-- Testing via npm and Node.js, avoiding third-party package managers or test runners.
+---
 
-## Animated walk through
+## 🆕 Learning Objectives
 
-Check out the **full animated explanation** of the Escrow program (also called Swap) from this video from QuickNode:
+- Understand and work with **Anchor 0.32.1**  
+- Build a full **Rust + Solana local environment (LiteSVM)**  
+- Use **Solana Kit**, **Kite**, and **Anchor CLI**  
+- Run **Rust-based and TypeScript tests**  
+- Deploy and interact with the program on a local validator
 
-[![Full animated explanation of the Escrow program](https://img.youtube.com/vi/B5eBWWQfQuM/maxresdefault.jpg)](https://www.youtube.com/watch?v=B5eBWWQfQuM)
+---
 
-This repository is [designed for teaching and learning](CHANGELOG.md).
+## 📚 Original Project Overview
 
-## Introduction
+The Anchor Escrow 2025 program implements an **escrow system**  
+that enables secure token swaps between users on Solana.
 
-This Solana program implements an **escrow**, enabling secure token swaps between users. For example, Alice can offer 10 USDC in exchange for 100 WIF.
+For example, Alice might offer **10 USDC** in exchange for **100 WIF**.  
+Without escrow, either side could fail to deliver, leading to fraud.  
+The escrow program ensures both sides receive their tokens only  
+after meeting the agreed conditions — safely and without intermediaries.
 
-Without an escrow, users face significant risks:
+---
 
-- **Traditional finance** charges 1-6% in fees, eating into your funds.
-- **Manual swaps** are prone to fraud. If Bob takes Alice's 10 USDC but doesn't send the 100 WIF, or if Alice fails to deliver after receiving Bob's tokens, someone gets burned.
+## 🧩 Technologies Used
 
-The **Anchor Escrow 2025** program acts as a trusted intermediary, releasing tokens only when both parties meet the agreed terms. This ensures Alice and Bob each receive 100% of their desired tokens, securely and without middleman fees.
+- 🧰 **Solana CLI**
+- 🦀 **Rust** & `cargo`
+- ⚓ **Anchor Framework** (v0.32.1)
+- 💻 **Node.js** & **npm**
+- 🧪 **LiteSVM** for local Rust-based testing
 
-## Versions
+---
 
-Verify your local environment with:
+## 🚀 Usage
 
-```bash
-bash show-versions.sh
-```
-
-This repository was tested with:
-
-```
-OS:
-  MacOS 15.4.1
-Solana CLI:
-  solana-cli 2.1.21 (src:8a085eeb; feat:1416569292, client:Agave)
-Anchor:
-  anchor-cli 0.32.1
-Node:
-  v22.14.0
-Rust:
-  rustc 1.86.0 (05f9846f8 2025-03-31)
-build-sbf version:
-  solana-cargo-build-sbf 2.1.21
-```
-
-Using different versions may cause compatibility issues.
-
-## Usage
-
-1. Clone the repository:
+1. **Clone this repository**
 
    ```bash
-   git clone https://github.com/mikemaccana/anchor-escrow-2025.git
-   cd anchor-escrow-2025
-   ```
+   git clone https://github.com/<YOUR_USERNAME>/anchor-escrow-2025-learning.git
+   cd anchor-escrow-2025-learning
+````
 
-2. Install dependencies:
+2. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-3. Run TypeScript tests:
+3. **Run TypeScript tests**
 
    ```bash
    anchor test
    ```
 
-4. Run LiteSVM tests:
+4. **Run Rust (LiteSVM) tests**
 
    ```bash
    cd programs/escrow
    cargo test
    ```
 
-5. Deploy the program:
+5. **Deploy the program**
+
    ```bash
    anchor deploy
    ```
 
-## Changelog and Credits
+---
 
-See the [CHANGELOG](CHANGELOG.md) for updates and contributor credits.
+## 🧪 Versions Used (for compatibility)
+
+```
+OS:
+  Windows / WSL2
+Solana CLI:
+  solana-cli 2.1.21 (Agave)
+Anchor:
+  anchor-cli 0.32.1
+Node:
+  v22.x
+Rust:
+  rustc 1.86.0 (05f9846f8 2025-03-31)
+build-sbf:
+  solana-cargo-build-sbf 2.1.21
+```
+
+> Using different versions may cause compatibility issues.
+
+---
+
+## 🙏 Credits
+
+Based on the open-source project
+[**Anchor Escrow 2025** by mikemaccana](https://github.com/mikemaccana/anchor-escrow-2025).
+This version was recreated and customized for **learning and experimentation**.
+
+---
+
+## 💡 Author
+
+**CuzimSmoky**
+Learning Rust, Solana, and Anchor — one block at a time 🦀⚓
+
+```
